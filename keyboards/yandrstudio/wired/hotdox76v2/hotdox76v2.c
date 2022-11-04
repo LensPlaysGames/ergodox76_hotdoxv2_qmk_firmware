@@ -1,12 +1,15 @@
 #include "hotdox76v2.h"
+
+#include <stdbool.h>
 #include <string.h>
 #include <transactions.h>
 // #include "oled_font_lib/logo.h"
 #include "oled_font_lib/logo2.h"
 #include "oled_font_lib/ext_font.h"
 
-
-
+#if !defined(I_AM_LEFT) && !defined(I_AM_RIGHT)
+#error A split keyboard must be compiled with either I_AM_LEFT or I_AM_RIGHT defined. You have to run `make` directly with `leftkb` and `rightkb` target, and flash each seperately (see README.md).
+#endif
 
 bool is_keyboard_left(void) {
 
@@ -150,14 +153,14 @@ void render_layer(uint8_t layer) {
         render_layer_helper_fun(1, PSTR("1:HOME"), 12, 6);
         break;
     case 1:
-        render_layer_helper_fun(1, PSTR("2:CODE"), 12, 6);
+        render_layer_helper_fun(1, PSTR("2:SYMS"), 12, 6);
         break;
     case 2:
-        render_layer_helper_fun(1, PSTR("3:OFFICE"), 0, 8);
+        render_layer_helper_fun(1, PSTR("3:UTIL"), 12, 6);
         break;
     case 3:
     default:
-        render_layer_helper_fun(1, PSTR("4:OTHERS"), 0, 8);
+        render_layer_helper_fun(1, PSTR("4:OTHER"), 6, 7);
         break;
     }
 }

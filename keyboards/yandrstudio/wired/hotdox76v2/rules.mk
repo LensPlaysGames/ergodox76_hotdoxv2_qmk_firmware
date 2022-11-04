@@ -21,6 +21,8 @@ OLED_DRIVER = SSD1306
 
 LTO_ENABLE = yes
 
+VIA_ENABLE = yes # Hot remapping of keys using VIA (+2200)
+
 # NO_USB_STARTUP_CHECK = yes
 
 # RGBLIGHT_ENABLE = yes

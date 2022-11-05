@@ -39,16 +39,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * | To HOME|   1  |   2  |   3  |   4  |   5  |LEFT  |           | RIGHT|  6   |  7   |  8   |  9   |  0   | -      |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * | Del    |  Q   |  W   |  E   |  R   |  T   |      |           |  L1  |  Y   |  U   |  I   |  O   |  P   | \      |
+ * | Del    |  Q   |  W   |  E   |  R   |  T   |      |           |      |  Y   |  U   |  I   |  O   |  P   | \      |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |BkSp/Ctl|  A   |  S   |  D   |  F   |  G   |------|           |------|  H   |  J   |  K   |  L   |; /OFF| '"     |
  * |--------+------+------+------+------+------|LCtrl |           | TO   |------+------+------+------+------+--------|
  * | LShift |  Z   |  X   |  C   |  V   |  B   |      |           | SYMS |  N   |  M   |  ,   |  .   |//Ctrl| RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |~/SYMS|LEFT  | RIGHT| LGUI | LAlt |                                       |   [  |   ]  |  UP  | DOWN |~HOME |
+ *   |~/SYMS|LEFT  | RIGHT| LGUI |-/LAlt|                                       |   [  |   ]  |  UP  | DOWN |~HOME |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,---------------.
- *                                        | Esc  |      |       | Alt  |Ctrl/Esc|
+ *                                        | Esc  |      |       | RAlt | RCtrl  |
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |      |      | NUM  |       |      |  Tab   |Enter |
  *                                 | Space|Backsp|------|       |------|   /    |  /   |
@@ -59,22 +59,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [HOME] = LAYOUT(
         // left had
         // NOTE: Do not override TO(HOME) on any layer!
-        TO(HOME),        KC_1,    KC_2,     KC_3,     KC_4,   KC_5,   KC_LEFT,
-        KC_DEL,          KC_Q,    KC_W,     KC_E,     KC_R,   KC_T,   KC_NO,
+        TO(HOME),        KC_1,    KC_2,     KC_3,     KC_4,   KC_5, KC_LEFT,
+        KC_DEL,          KC_Q,    KC_W,     KC_E,     KC_R,   KC_T, KC_NO,
         CTL_T(KC_BSPC),  KC_A,    KC_S,     KC_D,     KC_F,   KC_G,
-        KC_LSFT,         KC_Z,    KC_X,     KC_C,     KC_V,   KC_B,   KC_LCTL,
-        LT(SYMS,KC_GRV), KC_LEFT, KC_RGHT,  KC_LGUI,  MT(MOD_LALT, KC_NO),
+        KC_LSFT,         KC_Z,    KC_X,     KC_C,     KC_V,   KC_B, KC_LCTL,
+        LT(SYMS,KC_GRV), KC_LEFT, KC_RGHT,  KC_LGUI,  MT(MOD_LALT,  KC_MINS),
                                                KC_ESC,        KC_NO,
                                                               TG(NUMPAD),
                                                KC_SPC,KC_BSPC,KC_MINS,
 
         // right hand
-        KC_RGHT,     KC_6, KC_7,    KC_8,    KC_9,   KC_0,              KC_MINS,
-        TG(SYMS),    KC_Y, KC_U,    KC_I,    KC_O,   KC_P,              KC_BSLS,
-                     KC_H, KC_J,    KC_K,    KC_L,   LT(UTIL, KC_SCLN), KC_QUOT,
-        TO(SYMS),    KC_N, KC_M,    KC_COMM, KC_DOT, CTL_T(KC_SLSH),    KC_RSFT,
-                           KC_LBRC, KC_RBRC, KC_UP,  KC_DOWN,           TT(SYMS),
-        KC_LALT, CTL_T(KC_ESC),
+        KC_RGHT,  KC_6, KC_7,    KC_8,    KC_9,   KC_0,              KC_MINS,
+        KC_NO,    KC_Y, KC_U,    KC_I,    KC_O,   KC_P,              KC_BSLS,
+                  KC_H, KC_J,    KC_K,    KC_L,   LT(UTIL, KC_SCLN), KC_QUOT,
+        TO(SYMS), KC_N, KC_M,    KC_COMM, KC_DOT, CTL_T(KC_SLSH),    KC_RSFT,
+                        KC_LBRC, KC_RBRC, KC_UP,  KC_DOWN,           TT(SYMS),
+        KC_RALT, KC_RCTL,
         KC_NO,
         KC_EQL,  MT(MOD_LALT,KC_TAB), MT(MOD_LCTL,KC_ENT)
     ),
@@ -211,7 +211,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|      |           | LOCK |------+------+------+------+------+--------|
  * | ^      | ^    | ^    | ^    | ^    | ^    |------|           |------|  4   |  5   |  6   |  +   |ENTER |        |
  * |--------+------+------+------+------+------| ^    |           | TO   |------+------+------+------+------+--------|
- * | ^      | ^    | ^    | ^    | ^    | ^    |      |           | HOME |  1   |  2   |  3   |  /   |  UP  | RShift |
+ * | ^      | ^    | ^    | ^    | ^    | ^    |      |           | HOME |  1   |  2   |  3   |  /   |  UP  | ^      |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *   | ^    | ^    | ^    | ^    | ^    |                                       |  0   |  .   |LEFT  | DOWN | RIGHT|
  *   `----------------------------------'                                       `----------------------------------'

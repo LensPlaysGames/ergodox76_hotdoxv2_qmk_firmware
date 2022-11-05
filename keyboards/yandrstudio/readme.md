@@ -93,8 +93,9 @@ A creative coder.
 | suki68ble       | 0xAA96    | 0xAA65     | BLE 5.0 Dual mode, Hotswap, RGB  | &check;           |
 | tg75            | 0xAA96    | 0xAA66     | F103, RGB                        | &check;           |
 | perce67         | 0xAA96    | 0xAA67     | BLE 5.0 Dual mode, Hotswap, RGB  | &check;           |
-| xxxx67          | 0xAA96    | 0xAA68     | F103, RGB                        | &check;           |
+| point65         | 0xAA96    | 0xAA68     | F103, RGB                        | &check;           |
 | keit75          | 0xAA96    | 0xAA69     | F103, RGB                        | &check;           |
+| transition      | 0xAA96    | 0xAA70     | F103, RGB, Hotswap               | &check;           |
 
 
 ### Obsolete or Test keyboard for reference design only

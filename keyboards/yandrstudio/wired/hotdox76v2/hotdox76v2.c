@@ -160,7 +160,7 @@ void render_layer(uint8_t layer) {
         break;
     case 3:
     default:
-        render_layer_helper_fun(1, PSTR("4:OTHER"), 6, 7);
+        render_layer_helper_fun(1, PSTR("4:OTHER"), 12, 7);
         break;
     }
 }

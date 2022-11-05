@@ -21,6 +21,19 @@ enum Layer_name {
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+  /* Layer Navigation
+   *
+   * 1:HOME -> 2:SYMS -> 3:UTIL -> 4:OTHER
+   *
+   * At any time, the right side can be toggled in and out of numpad
+   * mode; the left side stays transparent. Within numpad mode, there
+   * is a NumLock to select between PgUp, PgDn, etc. keys and numpad
+   * number keys. The main reason for this is for gaming, especially
+   * things like DCS which require HEAVY usage of all these buttons. As
+   * well, GTA V, for example, requires the numpad keys to be able to
+   * pilot aircraft.
+   */
+
 /* Keymap 0: Basic layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
@@ -30,9 +43,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |BkSp/Ctl|  A   |  S   |  D   |  F   |  G   |------|           |------|  H   |  J   |  K   |  L   |; /OFF| '"     |
  * |--------+------+------+------+------+------|      |           | TO   |------+------+------+------+------+--------|
- * | LShift |Z/Ctrl|  X   |  C   |  V   |  B   |      |           | SYMS |  N   |  M   |  ,   |  .   |//Ctrl| RShift |
+ * | LShift |  Z   |  X   |  C   |  V   |  B   |      |           | SYMS |  N   |  M   |  ,   |  .   |//Ctrl| RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |~/SYMS|LEFT  | RIGHT|      | LAlt |                                       |   [  |   ]  |  UP  | DOWN |~HOME |
+ *   |~/SYMS|LEFT  | RIGHT| LGUI | LAlt |                                       |   [  |   ]  |  UP  | DOWN |~HOME |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,---------------.
  *                                        | Esc  |      |       | Alt  |Ctrl/Esc|
@@ -44,15 +57,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
   [HOME] = LAYOUT(
-        // left hand
+        // left had
         // NOTE: Do not override TO(HOME) on any layer!
-        TO(HOME),        KC_1,         KC_2,           KC_3,   KC_4,   KC_5,   KC_LEFT,
-        KC_DEL,          KC_Q,         KC_W,           KC_E,   KC_R,   KC_T,   TG(SYMS),
-        CTL_T(KC_BSPC),  KC_A,         KC_S,           KC_D,   KC_F,   KC_G,
-        KC_LSFT,         CTL_T(KC_Z),  KC_X,           KC_C,   KC_V,   KC_B,   KC_NO,
-        LT(SYMS,KC_GRV), KC_LGUI,      LALT(KC_LSFT),  KC_NO,  MT(MOD_LALT, KC_NO),
+        TO(HOME),        KC_1,    KC_2,     KC_3,     KC_4,   KC_5,   KC_LEFT,
+        KC_DEL,          KC_Q,    KC_W,     KC_E,     KC_R,   KC_T,   KC_NO,
+        CTL_T(KC_BSPC),  KC_A,    KC_S,     KC_D,     KC_F,   KC_G,
+        KC_LSFT,         KC_Z,    KC_X,     KC_C,     KC_V,   KC_B,   KC_NO,
+        LT(SYMS,KC_GRV), KC_LEFT, KC_RGHT,  KC_LGUI,  MT(MOD_LALT, KC_NO),
                                                KC_ESC,        KC_NO,
-                                               TG(NUMPAD),
+                                                              TG(NUMPAD),
                                                KC_SPC,KC_BSPC,KC_MINS,
 
         // right hand

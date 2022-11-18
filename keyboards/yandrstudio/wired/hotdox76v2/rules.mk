@@ -10,21 +10,23 @@ F_USB = $(F_CPU)
 #
 BOOTMAGIC_ENABLE = yes  # Virtual DIP switch configuration(+1000)
 # MOUSEKEY_ENABLE = yes # Mouse keys(+4700)
-# UNICODEMAP_ENABLE = yes
 EXTRAKEY_ENABLE = yes   # Audio control and System control(+450)
-CONSOLE_ENABLE = no # Console for debug(+400)
-COMMAND_ENABLE = no    # Commands for debug and configuration
+CONSOLE_ENABLE = no     # Console for debug(+400)
+COMMAND_ENABLE = no     # Commands for debug and configuration
 NKRO_ENABLE = yes       # USB Nkey Rollover - if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
 
-OLED_ENABLE = yes    # Enable Support for SSD1306 or SH1106 OLED Displays; Communicating over I2C
+# (+5000)
+OLED_ENABLE = yes       # Enable Support for SSD1306 or SH1106 OLED Displays; Communicating over I2C
 OLED_DRIVER = SSD1306
 
-LTO_ENABLE = yes
+LTO_ENABLE = yes # Save space and stuff
 
-VIA_ENABLE = yes # Hot remapping of keys using VIA (+2200)
+# (+2200)
+VIA_ENABLE = yes # Hot remapping of keys using VIA
 
 # NO_USB_STARTUP_CHECK = yes
 
+# RGB decided per keymap rules.mk!
 # RGBLIGHT_ENABLE = yes
 # RGBLIGHT_DRIVER = WS2812
 # RGB_MATRIX_ENABLE = yes

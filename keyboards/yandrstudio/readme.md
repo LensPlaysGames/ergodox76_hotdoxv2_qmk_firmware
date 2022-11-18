@@ -9,6 +9,7 @@ A creative coder.
 ## Keyboard Firmwares and Utils
 
 ### Keyboards Released by Y&R Studio Itself
+
 | NAME          | VENDOR_ID | PRODUCT_ID | FEATURES                              | COMMERCIALIZATION |
 | ------------- | --------- | ---------- | ------------------------------------- | ----------------- |
 | rainbow65     | 0xAA96    | 0xAA00     | OLED, RGB, ENCODER                    | &check;           |
@@ -26,30 +27,30 @@ A creative coder.
 | yr6095        | 0xAA96    | 0xAA0C     | F103                                  | &check;           |
 | yr80          | 0xAA96    | 0xAA0D     | F103                                  | &check;           |
 
+### Keyboards Completed with Y&R Studio Participation
 
-### Keyboards Completed with Y&R Studio Participation 
 | NAME            | VENDOR_ID | PRODUCT_ID | FEATURES                         | COMMERCIALIZATION |
 | --------------- | --------- | ---------- | -------------------------------- | ----------------- |
 | nlhhkb          | 0xAA96    | 0xAAA0     | 32u4                             | &quest;           |
 | tdcq68          | 0xAA96    | 0xAAA1     | F401, RGB                        | &cross;           |
 | tdcq64_2s       | 0xAA96    | 0xAAA2     | F401, RGB                        | &cross;           |
-| yp980ble        | 0xAA96    | 0xAAA3     | BLE 5.0 Dual mode                | &quest;           |
+| yp980ble        | 0xAA96    | 0xAAA3     | BLE 5.0 Dual mode                | &cross;           |
 | whitemouse69    | 0xAA96    | 0xAAA4     | F401, RGB                        | &check;           |
 | wave87          | 0xAA96    | 0xAAA5     | F401, RGB                        | &check;           |
 | m69             | 0xAA96    | 0xAAA6     | F401,80%, RGB, Hotswap           | &check;           |
 | m69             | 0xAA96    | 0xAAB6     | F401,80%, RGB, Solder            | &check;           |
 | zhou75          | 0xAA96    | 0xAAA7     | F401, ENCODER, Hotswap           | &check;           |
-| zhou75          | 0xAA96    | 0xAAB7     | F401, ENCODER, Solder            | &check;           |
-| yp87ble         | 0xAA96    | 0xAAA8     | BLE 5.0 Dual mode                | &quest;           |
+|                 |           | 0xAAB7     | F401, ENCODER, Solder            | &check;           |
+| yp87ble         | 0xAA96    | 0xAAA8     | BLE 5.0 Dual mode                | &cross;           |
 | hotdox76v2      | 0xAA96    | 0xAAA9     | 32u4, Split KB, OLED, RGB        | &check;           |
-| eureka75        | 0xAA96    | 0xAAAA     | F401,ENCODER                     | &check;           |
-| boy40ble        | 0xAA96    | 0xAAAB     | BLE 5.0 Dual mode                | &quest;           |
+| eureka75        | 0xAA96    | 0xAAAA     | F401,ENCODER                     | &quest;           |
+| boy40ble        | 0xAA96    | 0xAAAB     | BLE 5.0 Dual mode                | &cross;           |
 | boyPad          | 0xAA96    | 0xAAAC     | F401                             | &cross;           |
 | zhou65          | 0xAA96    | 0xAAAD     | F401                             | &check;           |
 | lh68            | 0xAA96    | 0xAAAE     | F401, RGB                        | &quest;           |
 | nz64            | 0xAA96    | 0xAAAF     | F401, RGB                        | &check;           |
 | ty66ble         | 0xAA96    | 0xAAC0     | BLE 5.0 Dual mode                | &cross;           |
-| sci980          | 0xAA96    | 0xAAC1     | 32u4, RGB                        | &check;           |
+| sci980          | 0xAA96    | 0xAAC1     | 32u4, RGB                        | &quest;           |
 | z_alice_ble     | 0xAA96    | 0xAAC2     | BLE 5.0 Dual mode, RGB           | &check;           |
 | coder68ble      | 0xAA96    | 0xAAC3     | BLE 5.0 Dual mode, Hotswap       | &check;           |
 | coder68ble      | 0xAA96    | 0xAAC4     | BLE 5.0 Dual mode, Solder        | &check;           |
@@ -58,19 +59,18 @@ A creative coder.
 | m93ble          | 0xAA96    | 0xAAC7     | BLE 5.0 Dual mode, Hotswap, RGB  | &check;           |
 | rs40ble         | 0xAA96    | 0xAAC8     | BLE 5.0 Dual mode, Hotswap, RGB  | &check;           |
 | s68m            | 0xAA96    | 0xAAC9     | STM32F103 UF2, Solder            | &check;           |
-| zpadble         | 0xAA96    | 0xAACA     | BLE, Hotswap, RGB, Encoder, OLED | &check;           |
+| zpadble         | 0xAA96    | 0xAACA     | BLE, Hotswap, RGB, Encoder, OLED | &cross;           |
 | ml75r2ble       | 0xAA96    | 0xAACB     | BLE, Encoder, OLED               | &check;           |
 | eau_r2          | 0xAA96    | 0xAACD     | F103, RGB                        | &check;           |
 | zhou980         | 0xAA96    | 0xAACE     | F103, RGB                        | &check;           |
 | nz63            | 0xAA96    | 0xAACF     | F103, RGB                        | &check;           |
 | prism_pad       | 0xAA96    | 0xAAEA     | BLE                              | &check;           |
 | eau87           | 0xAA96    | 0xAAEB     | F103                             | &check;           |
-| wy65            | 0xAA96    | 0xAAEC     | F103                             | &check;           |
-| xray1xx         | 0xAA96    | 0xAAED     | BLE, Hotswap, RGB                | &check;           |
-| jupiter980      | 0xAA96    | 0xAAEF     | BLE, Hotswap, RGB                | &check;           |
-| jupiter980      | 0xAA96    | 0xAAFF     | BLE, Solder, RGB                 | &check;           |
+| wy65            | 0xAA96    | 0xAAEC     | F103                             | &cross;           |
+| xray1xx         | 0xAA96    | 0xAAED     | BLE, Hotswap, RGB                | &cross;           |
+| jupiter980      | 0xAA96    | 0xAAEF     | BLE, Hotswap, RGB                | &cross;           |
+|                 |           | 0xAAFF     | BLE, Solder, RGB                 | &cross;           |
 | whitemouse69pro | 0xAA96    | 0xAA80     | F401, RGB, Encoder               | &check;           |
-| zhoulice        | 0xAA96    | 0xAA81     | F401, RGB, Encoder               | &check;           |
 | binary68        | 0xAA96    | 0xAA82     | BLE, F401, RGB                   | &check;           |
 | nz67v2          | 0xAA96    | 0xAA83     | F401, RGB, Encoder               | &check;           |
 | sam40v2         | 0xAA96    | 0xAA84     | BLE, F401                        | &check;           |
@@ -78,24 +78,30 @@ A creative coder.
 | rita65r2        | 0xAA96    | 0xAA86     | F103, RGB                        | &check;           |
 | nightstar75     | 0xAA96    | 0xAA87     | F103, RGB                        | &check;           |
 | buff67v3        | 0xAA96    | 0xAA88     | F103, RGB                        | &check;           |
-| dome65          | 0xAA96    | 0xAA89     | BLE                              | &check;           |
+| dome65          | 0xAA96    | 0xAA89     | BLE                              | &cross;           |
 | soul70          | 0xAA96    | 0xAA8A     | BLE                              | &check;           |
 | nz67ble         | 0xAA96    | 0xAA8B     | BLE                              | &check;           |
 | whitemouse69v2  | 0xAA96    | 0xAA8C     | F103, RGB                        | &check;           |
 | tg67            | 0xAA96    | 0xAA8D     | F103, RGB                        | &check;           |
 | wave75          | 0xAA96    | 0xAA8E     | F103                             | &check;           |
-| ID96            | 0xAA96    | 0xAA8F     | F103, RGB                        | &check;           |
-| ID68            | 0xAA96    | 0xAA60     | F103, RGB                        | &check;           |
+| ID96            | 0xAA96    | 0xAA8F     | F103, RGB                        | &quest;           |
+| ID68            | 0xAA96    | 0xAA60     | F103, RGB                        | &quest;           |
 | BL75            | 0xAA96    | 0xAA61     | F103, RGB                        | &check;           |
 | m83ble          | 0xAA96    | 0xAA62     | BLE 5.0 Dual mode, Hotswap, RGB  | &check;           |
-| sp60            | 0xAA96    | 0xAA63     | F103, RGB                        | &check;           |
+| sp60            | 0xAA96    | 0xAA63     | F103, RGB, Hotswap               | &check;           |
+|                 |           | 0xAA6A     | F10, RGB, Solder                 | &check;           |
 | soul75          | 0xAA96    | 0xAA64     | BLE 5.0 Dual mode, Hotswap, RGB  | &check;           |
 | suki68ble       | 0xAA96    | 0xAA65     | BLE 5.0 Dual mode, Hotswap, RGB  | &check;           |
 | tg75            | 0xAA96    | 0xAA66     | F103, RGB                        | &check;           |
 | perce67         | 0xAA96    | 0xAA67     | BLE 5.0 Dual mode, Hotswap, RGB  | &check;           |
 | point65         | 0xAA96    | 0xAA68     | F103, RGB                        | &check;           |
 | keit75          | 0xAA96    | 0xAA69     | F103, RGB                        | &check;           |
+| star80          | 0xAA96    | 0xAA6B     | F103, RGB, Hotswap, TFT Screen   | &check;           |
+| uc65s           | 0xAA96    | 0xAA6C     | BLE, Hotswap, RGB,               | &check;           |
 | transition      | 0xAA96    | 0xAA70     | F103, RGB, Hotswap               | &check;           |
+| meteor80        | 0xAA96    | 0xAA71     | F103, RGB, Hotswap, Partially    | &check;           |
+| n66ble          | 0xAA96    | 0xAA72     | BLE, Hotswap, RGB, Audio         | &check;           |
+
 
 
 ### Obsolete or Test keyboard for reference design only
@@ -107,8 +113,6 @@ A creative coder.
 | tlcd      | 0xAA96    | 0xFFFF     | STM32F401, LCD                | &cross;           |
 | tec       | 0xAA96    | 0xFFFF     | STM32F401, Electro Capacitive | &cross;           |
 
-
-
 ### Keyboard Tools Developed by Y&R Studio
 
 - RGB matrix calculation script
@@ -116,6 +120,7 @@ A creative coder.
 - Real time key remap software
 
 ### Make Command
+
 ```shell
 # ble
 make yandrstudio/ble/z_alice_ble/f401:ble; make yandrstudio/ble/zhou65ble/f401:ble; make yandrstudio/ble/m93ble/f401:ble; make yandrstudio/ble/rs40ble/f401:ble; make yandrstudio/ble/nz64ble/f401:ble;

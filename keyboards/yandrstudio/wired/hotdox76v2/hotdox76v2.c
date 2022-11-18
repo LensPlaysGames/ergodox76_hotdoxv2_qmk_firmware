@@ -159,8 +159,11 @@ void render_layer(uint8_t layer) {
         render_layer_helper_fun(1, PSTR("3:UTIL"), 12, 6);
         break;
     case 3:
-    default:
         render_layer_helper_fun(1, PSTR("4:OTHER"), 12, 7);
+        break;
+    case 4:
+    default:
+        render_layer_helper_fun(1, PSTR("NUMPAD"), 12, 6);
         break;
     }
 }

@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
   [HOME] = LAYOUT(
-        // left had
+        // left hand
         // NOTE: Do not override TO(HOME) on any layer!
         TO(HOME),        KC_1,    KC_2,     KC_3,     KC_4,   KC_5, KC_NO,
         KC_DEL,          KC_Q,    KC_W,     KC_E,     KC_R,   KC_T, KC_NO,

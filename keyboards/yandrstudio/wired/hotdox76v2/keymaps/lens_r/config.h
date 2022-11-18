@@ -1,4 +1,4 @@
-/* Copyright 2021 JasonRen(biu)
+/* Copyright 2021 JasonRen(biu), 2022 Rylan Lens Kellogg
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 
 #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_CROSS
 #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTICROSS
-// #define ENABLE_RGB_MATRIX_BAND_SPIRAL_SAT // (+100)
+#define DISABLE_RGB_MATRIX_BAND_SPIRAL_SAT // (+100)
 #define ENABLE_RGB_MATRIX_BAND_SPIRAL_VAL
 
 #define DISABLE_RGB_MATRIX_ALPHAS_MODS
@@ -50,12 +50,14 @@
 
 
 #ifdef RGBLIGHT_ENABLE
+
 #define RGBLIGHT_EFFECT_BREATHING
 #define RGBLIGHT_EFFECT_RAINBOW_MOOD
 #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
 #define RGBLIGHT_EFFECT_KNIGHT
 #define RGBLIGHT_EFFECT_SNAKE
 #define RGBLIGHT_EFFECT_STATIC_GRADIENT
+
 #endif
 
 
